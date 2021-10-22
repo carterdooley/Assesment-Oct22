@@ -32,6 +32,15 @@
 
 //CODE HERE
 
+let pizza = {
+    name: 'Meat Lovers',
+    price: 22,
+    category: 'entree',
+    popularity: 5,
+    rating: 4,
+    tags: ['meat', 'Thick Crust', 'Specialty']
+
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,6 +52,7 @@
 */
 
 //CODE HERE
+console.log(pizza.popularity)
 
 
 /*
@@ -53,6 +63,7 @@
 */
 
 //CODE HERE
+console.log(pizza['tags'])
 
 
 /*
@@ -64,6 +75,8 @@
 
 //CODE HERE
 
+let price = pizza.price
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -73,6 +86,9 @@
 */
 
 //CODE HERE
+
+let category = pizza.category
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -88,6 +104,49 @@
 */
 
 //CODE HERE
+
+let foodArr = [
+    Burger = {
+        name: 'Burger',
+        price: 12,
+        category: 'entree',
+        popularity: 3,
+        rating: 3,
+        tags: ['meat', 'bread', 'sandwich']
+    }, 
+    Salad = {
+        name: 'Salad',
+        price: 8,
+        category: 'appetizer',
+        popularity: 5,
+        rating: 5,
+        tags: ['vegitarian', 'healthy'] 
+    },
+    Nachos = {
+        name: 'Nachos',
+        price: 10,
+        category: 'appetizer',
+        popularity: 3,
+        rating: 3,
+        tags: ['meat', 'cultural', 'spicy']
+    },
+    BLT = {
+        name: 'BLT',
+        price: 13,
+        category: 'entree',
+        popularity: 5,
+        rating: 4,
+        tags: ['meat', 'egg', 'popular']
+    },
+    vStirFry = {
+        name: 'Vegitable Stirfry',
+        price: 13,
+        category: 'entree',
+        popularity: 5,
+        rating: 4,
+        tags: ['vegitarian', 'noodles']
+    }
+]
 
 
 
@@ -105,9 +164,13 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+let filteredFood = foodArr.filter( foodArr => {
+        if (foodArr.tags.includes('meat')){
+            return foodArr
+        } 
+})
 
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
