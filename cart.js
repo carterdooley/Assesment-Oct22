@@ -18,28 +18,30 @@
     the food. 
 */
 
-const cart = [
-    {
+let cart = [
+  {
         name: 'pizza', 
         price: 9.99
     }, 
-    {
+   {
         name: 'pasta', 
         price: 8.99
     }, 
-    {
+   {
         name: 'salad', 
         price: 7.99
     }
 ]
 
- 
+
 
 
 //CODE HERE
-console.log(cart[2])
 
-const summedPrice = cart.reduce(c )
+
+const summedPrice = cart.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue.price
+}, 0)
 
 console.log(summedPrice)
 
@@ -61,6 +63,12 @@ console.log(summedPrice)
 
 //CODE HERE
 
+const calcFinalPrice = (cartTotal, couponValue, tax ) => {
+    tax = cartTotal * .08
+    return cartTotal + tax - couponValue
+}
+
+console.log(calcFinalPrice(summedPrice, 0, 0))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -85,7 +93,8 @@ console.log(summedPrice)
 
 /*
     TEXT ANSWER HERE
-
+The resturaunt will need the customers name; for when the customer arrives for their order. Will need their phone number; in case the customer
+doesn't show up so the resturaunt can call them.
 */
 
 /*
@@ -94,3 +103,8 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+
+let cust1 = {
+    name: 'Chris',
+    phoneNumber: '234-335-7643'
+}
