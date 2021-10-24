@@ -213,8 +213,14 @@ console.log(filteredFood)
 
 //CODE HERE
 
-const filteredByProperty =(rating, popularity, price)=> {
-let filteredMenu = foodArr.filter
+const filteredByProperty =(property, number, type) => {
+let filteredMenu = foodArr.filter(foodArr => {
+    if (type === 'above' && property > number) {
+    return newObjects = foodArr.property > number
+    } else if (type === 'below' && property < number) {
+        return new1Objects = foodArr.property < number
+    }
+})
 }
 
 
@@ -228,3 +234,5 @@ let filteredMenu = foodArr.filter
 */
 
 //CODE HERE
+
+console.log(filteredByProperty(this.rating, 5, 'below'))
