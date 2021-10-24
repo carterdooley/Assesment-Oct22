@@ -22,7 +22,7 @@
 //CODE HERE
 
 class employee {
-    construtor(name1, shift){
+    constructor(name1, shift){
         this.name1 = name1
         this.shift = shift
     }
