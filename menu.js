@@ -213,6 +213,12 @@ console.log(filteredFood)
 
 //CODE HERE
 
+const filteredByProperty =(rating, popularity, price)=> {
+let filteredMenu = foodArr.filter
+}
+
+
+
 
 /*
     Invoke the `filterByProperty` function passing
